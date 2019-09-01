@@ -1,0 +1,12 @@
+<li class="list-group-item alert">
+  <h2>{{ postTitle }}</h2>
+  <small>créer le : {{ postCreatedAt | date }}</small>
+  <p>{{ postContent }} -- {{ postLoveIts }}</p>
+
+  <button id="loveIt" class="btn btn-success" (click)="onIncrLove()">
+    Love it !
+  </button>
+  <button id="notLove" class="btn btn-danger" (click)="onDecrLove()">
+    Don't love it !
+  </button>
+</li>
