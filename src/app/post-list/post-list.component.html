@@ -1,4 +1,7 @@
-<li class="list-group-item alert">
+<li
+  class="list-group-item "
+  [className]="postLoveIts < 0 ? 'alert alert-danger' : 'alert alert-success'"
+>
   <h2>{{ postTitle }}</h2>
   <small>créer le : {{ postCreatedAt | date }}</small>
   <p>{{ postContent }} -- {{ postLoveIts }}</p>
